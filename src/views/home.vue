@@ -188,7 +188,7 @@
     <footer class="home-footer">
       <img
         alt="logo"
-        src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+        src="/playground_assets/bildschirmfoto%202021-10-28%20um%2018.33.35-1200h.png"
         class="home-image2"
       />
       <span class="home-text43">Â© 2021 FruitFarm, All Rights Reserved.</span>
