@@ -41,16 +41,11 @@
   <body>
     <div id="app"></div>
     <script>
-      window.addEventListener( "pageshow", function ( event ) {
-        var historyTraversal = event.persisted ||
-                               ( typeof window.performance != "undefined" &&
-                                    window.performance.navigation.type === 2 );
-        if ( historyTraversal ) {
-          // Handle page restore.
+      if(!!window.performance && window.performance.navigation.type == 2)
+      {
           window.location.reload();
-        }
-      });
-      window.addEventListener('load', function () {
+      }
+      window.addEventListener('onpageshow', function () {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
       hamburger.addEventListener("click", mobileMenu);
