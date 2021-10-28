@@ -101,6 +101,9 @@
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+.nav-item {
+  text-decoration: none;
+}
 .heading {
   font-size: 32px;
   font-family: Inter;
@@ -126,6 +129,9 @@
   .hamburger {
     width: 62px;
     height: 38px;
+  }
+  .nav-item {
+    margin-bottom: var(--dl-space-space-unit);
   }
 }
 
