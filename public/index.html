@@ -41,6 +41,25 @@
   <body>
     <div id="app"></div>
     <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      hamburger.addEventListener("click", mobileMenu);
+      function mobileMenu() {
+          navMenu.style.left = 0;
+      hamburger.removeEventListener("click", mobileMenu);
+      hamburger.addEventListener("click", closeMenu);
+      }
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.style.left = "-100%";
+      hamburger.removeEventListener("click", closeMenu);
+      hamburger.addEventListener("click", mobileMenu);
+      }
+
       window.addEventListener('load', function () {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
