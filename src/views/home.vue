@@ -312,6 +312,7 @@ export default {
   height: var(--dl-size-size-xsmall);
 }
 .home-container02 {
+  flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -747,14 +748,14 @@ export default {
   text-align: center;
 }
 .home-footer {
-  flex: 0;
+  left: 0px;
   width: 100%;
-  bottom: 0px;
-  margin: auto;
+  bottom: auto;
   display: flex;
-  position: absolute;
+  position: sticky;
   max-width: 100%;
   align-items: center;
+  flex-shrink: 0;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
@@ -796,6 +797,9 @@ export default {
   .home-text02 {
     text-align: center;
   }
+  .home-stats {
+    z-index: 100;
+  }
   .home-text25 {
     text-align: center;
   }
@@ -807,6 +811,12 @@ export default {
   }
   .home-text39 {
     text-align: center;
+  }
+  .home-footer {
+    left: -46px;
+    bottom: 81px;
+    height: var(--dl-size-size-small);
+    position: static;
   }
 }
 @media(max-width: 767px) {
@@ -824,6 +834,8 @@ export default {
     display: flex;
   }
   .home-steps {
+    height: 734px;
+    max-width: 100%;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
@@ -1005,6 +1017,8 @@ export default {
     text-align: left;
   }
   .home-stats {
+    height: 186px;
+    max-width: 100%;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
     grid-template-columns: 1fr 1fr;
@@ -1022,6 +1036,10 @@ export default {
     text-align: center;
   }
   .home-footer {
+    left: 0px;
+    bottom: 0px;
+    height: 90px;
+    position: absolute;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
