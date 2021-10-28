@@ -11,7 +11,7 @@
         src="/playground_assets/bildschirmfoto%202021-10-28%20um%2018.33.35-1200h.png"
         class="home-image"
       />
-      <div class="nav-menu active">
+      <div class="home-nav nav-menu">
         <navigation-links rootClassName="rootClassName1"></navigation-links>
       </div>
       <div class="home-btn-group">
@@ -268,6 +268,10 @@ export default {
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius4);
 }
+.home-nav {
+  transition: 0.3s;
+}
+
 .home-btn-group {
   display: flex;
   align-items: center;
