@@ -11,7 +11,7 @@
         src="/playground_assets/bildschirmfoto%202021-10-28%20um%2018.33.35-1200h.png"
         class="home-image"
       />
-      <div class="nav-menu">
+      <div class="nav-menu active">
         <navigation-links rootClassName="rootClassName1"></navigation-links>
       </div>
       <div class="home-btn-group">

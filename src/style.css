@@ -108,8 +108,9 @@
   display: flex;
   transition: 0.3s;
 }
-.nav-menu:active {
-  left: 0;
+.active {
+  left:: 0;
+  transition: 0.3s;
 }
 .heading {
   font-size: 32px;
