@@ -185,6 +185,7 @@
         </div>
       </div>
     </div>
+    <div class="home-container16"></div>
     <footer class="home-footer">
       <img
         alt="logo"
@@ -747,10 +748,16 @@ export default {
   margin-top: var(--dl-space-space-halfunit);
   text-align: center;
 }
+.home-container16 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
 .home-footer {
   left: 0px;
   width: 100%;
-  bottom: auto;
   display: flex;
   position: sticky;
   max-width: 100%;
@@ -797,9 +804,6 @@ export default {
   .home-text02 {
     text-align: center;
   }
-  .home-stats {
-    z-index: 100;
-  }
   .home-text25 {
     text-align: center;
   }
@@ -813,10 +817,7 @@ export default {
     text-align: center;
   }
   .home-footer {
-    left: -46px;
-    bottom: 81px;
     height: var(--dl-size-size-small);
-    position: static;
   }
 }
 @media(max-width: 767px) {
@@ -833,8 +834,12 @@ export default {
   .home-menu-burger {
     display: flex;
   }
+  .home-icon {
+    width: 68px;
+    height: 28px;
+  }
   .home-steps {
-    height: 734px;
+    height: auto;
     max-width: 100%;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1017,7 +1022,7 @@ export default {
     text-align: left;
   }
   .home-stats {
-    height: 186px;
+    height: auto;
     max-width: 100%;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1036,10 +1041,6 @@ export default {
     text-align: center;
   }
   .home-footer {
-    left: 0px;
-    bottom: 0px;
-    height: 90px;
-    position: absolute;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
