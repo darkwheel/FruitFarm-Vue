@@ -11,7 +11,7 @@
         src="/playground_assets/bildschirmfoto%202021-10-28%20um%2018.33.35-1200h.png"
         class="home-image"
       />
-      <div class="home-nav">
+      <div class="nav-menu">
         <navigation-links rootClassName="rootClassName1"></navigation-links>
       </div>
       <div class="home-btn-group">
@@ -267,13 +267,6 @@ export default {
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius4);
-}
-.home-nav {
-  display: flex;
-  transition: 0.3s;
-}
-.home-nav:active {
-  left: 0;
 }
 .home-btn-group {
   display: flex;
@@ -839,18 +832,6 @@ export default {
   .home-text02 {
     font-size: 1px;
     text-align: center;
-  }
-  .home-nav {
-    top: 5rem;
-    left: -100%;
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: 0.3s;
-    border-radius: 10px;
-    flex-direction: column;
-    background-color: #fff;
   }
   .home-button {
     flex: 1;

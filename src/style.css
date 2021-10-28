@@ -104,6 +104,13 @@
 .nav-item {
   text-decoration: none;
 }
+.nav-menu {
+  display: flex;
+  transition: 0.3s;
+}
+.nav-menu:active {
+  left: 0;
+}
 .heading {
   font-size: 32px;
   font-family: Inter;
@@ -132,6 +139,18 @@
   }
   .nav-item {
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .nav-menu {
+    top: 5rem;
+    left: -100%;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #fff;
   }
 }
 
