@@ -41,6 +41,7 @@
   <body>
     <div id="app"></div>
     <script>
+      window.addEventListener('hashchange', function () {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
       hamburger.addEventListener("click", mobileMenu);
@@ -60,6 +61,7 @@
       hamburger.addEventListener("click", mobileMenu);
       }
 
+      })
       window.addEventListener('load', function () {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
