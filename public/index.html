@@ -49,6 +49,8 @@
       hamburger.addEventListener("click", mobileMenu);
       function mobileMenu() {
           navMenu.style.left = 0;
+      hamburger.removeEventListener("click", mobileMenu);
+      hamburger.addEventListener("click", closeMenu);
       }
       const navLink = document.querySelectorAll(".nav-link");
 
@@ -57,6 +59,8 @@
       function closeMenu() {
           hamburger.classList.remove("active");
           navMenu.style.left = "-100%";
+      hamburger.removeEventListener("click", closeMenu);
+      hamburger.addEventListener("click", mobileMenu);
       }
 
       })
