@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Meta from 'vue-meta'
 
 import Home from './views/home'
+import Mint from './views/mint'
+import Stake from './views/stake'
 import './style.css'
 
 Vue.use(Router)
@@ -14,6 +16,16 @@ export default new Router({
       name: 'Home',
       path: '/',
       component: Home,
+    },
+    {
+      name: 'Mint',
+      path: '/mint',
+      component: Mint,
+    },
+    {
+      name: 'Stake',
+      path: '/stake',
+      component: Stake,
     },
   ],
 })

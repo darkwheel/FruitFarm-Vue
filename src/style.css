@@ -87,6 +87,20 @@
 .teleport-show {
   display: flex !important;
 }
+.hamburger {
+  width: var(--dl-size-size-medium);
+  height: var(--dl-size-size-small);
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
 .heading {
   font-size: 32px;
   font-family: Inter;
@@ -103,3 +117,15 @@
   text-transform: none;
   text-decoration: none;
 }
+@media(max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+}
+@media(max-width: 767px) {
+  .hamburger {
+    width: 62px;
+    height: 38px;
+  }
+}
+

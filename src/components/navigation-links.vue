@@ -1,8 +1,12 @@
 <template>
-  <nav class="navigation-links-nav">
-    <span class="navigation-links-text">{{ text }}</span>
-    <span class="navigation-links-text1">{{ text1 }}</span>
-    <span class="navigation-links-text2">{{ text2 }}</span>
+  <nav class="navigation-links-nav" v-bind:class="rootClassName">
+    <router-link to="/mint" class="navigation-links-navlink">
+      {{ text }}
+    </router-link>
+    <router-link to="/stake" class="navigation-links-navlink1">
+      {{ text1 }}
+    </router-link>
+    <span class="navigation-links-text">{{ text2 }}</span>
   </nav>
 </template>
 
@@ -34,27 +38,42 @@ export default {
   align-items: center;
   flex-direction: row;
 }
-.navigation-links-text1 {
+.navigation-links-navlink {
+  text-decoration: none;
+}
+.navigation-links-navlink1 {
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.navigation-links-text {
   margin-left: var(--dl-space-space-twounits);
 }
-.navigation-links-text2 {
-  margin-left: var(--dl-space-space-twounits);
-}
+
+
+
+
+
+
+
 @media(max-width: 767px) {
   .navigation-links-nav {
     align-items: flex-start;
     flex-direction: column;
   }
+  .navigation-links-navlink {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
   .navigation-links-text {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links-text1 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .navigation-links-text2 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
+  .rootClassName1 {
+    margin-left: var(--dl-space-space-threeunits);
+    margin-right: var(--dl-space-space-threeunits);
   }
 }
 </style>
